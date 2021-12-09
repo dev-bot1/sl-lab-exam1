@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="mat-display-3">💧 All Details</div>
+    <div class="list" *ngFor="let data of datas">
+        <mat-card>
+            <mat-card-header>
+                <mat-card-title>
+                    {{data.name}}
+                </mat-card-title>
+                <mat-card-subtitle>
+                    Date: {{data.date}}
+                </mat-card-subtitle>
+            </mat-card-header>
+            <mat-card-content>
+                <h2>
+                    💧 Water Consumed: {{data.amount}} Liters                  
+                </h2>
+            </mat-card-content>
+        </mat-card>
+    </div>
+</div>

@@ -1,0 +1,28 @@
+<div class="my_container">
+    <mat-card>
+        <h1>➕ Add Water Consumption</h1>
+        <mat-card-content>
+            <form #userdata="ngForm" (ngSubmit)="onClickSubmit(userdata.value)">
+                <mat-form-field color="accent" class="full-width" appearance="fill">
+                    <mat-label>Customer Name</mat-label>
+                    <input matInput name="name" ngModel>
+                </mat-form-field>
+
+                <br>
+                <mat-form-field color="accent" class="full-width" appearance="fill">
+                    <mat-label>Amount Of Water (in Liters)</mat-label>
+                    <input matInput name="amount" type="number" ngModel>
+                </mat-form-field>
+
+                <br>
+                <mat-form-field color="accent" class="full-width" appearance="fill">
+                    <mat-label>Date</mat-label>
+                    <input  type="date" matInput name="date" ngModel>
+                </mat-form-field>
+                <br>
+
+                <button mat-flat-button color="accent" type="submit" value="submit" >Submit</button>
+            </form>
+        </mat-card-content>
+    </mat-card>
+</div>
